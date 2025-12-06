@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KINDOLL HYACINTH - IT Student Portfolio</title>
+    <title>Kindoll Hyacinth - Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Kindoll Hyacinth, an IT Student and Web Developer.">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="animation-wrapper">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+    </div>
 
     <div class="navbar">
         <div class="container">
@@ -18,8 +26,12 @@
                     <ul>
                         <li><a href="#hero" class="nav-link">About</a></li>
                         <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
                         <li><a href="certificates.html" class="nav-link">Certificates</a></li> 
                     </ul>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </nav>
             </header>
         </div>
@@ -28,28 +40,35 @@
     <section id="hero" class="container">
         <div class="hero-content">
             <h1>KINDOLL HYACINTH</h1>
-            <h2>IT Student</h2>
-            <p>I'm raised and born in Davao City and I am currently a 3rd-year student at Holy Cross of Davao College. I'm passionate about building web applications and crafting seamless user experiences.</p>
+            <h2 class="typing-target">Frontend Developer</h2>
+            <p>I build interactive, accessible, and responsive web applications. Currently an IT student at Holy Cross of Davao College passionate about solving problems with code.</p>
             
             <div class="tech-stack">
                 <h3>My Tech Stack</h3>
                 <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Next.js</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Tailwind CSS</span>
-                    <span class="tag">Node.js</span>
+                    <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+                    <span class="tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="tag"><i class="fab fa-react"></i> React</span>
+                    <span class="tag"><i class="fas fa-database"></i> Database</span>
+                    <span class="tag"><i class="fab fa-node-js"></i> Node.js</span>
                 </div>
+            </div>
+
+                        <div class="cta-container">
+                <a href="#contact" class="primary-btn">
+                    Let's Talk <i class="fas fa-paper-plane"></i>
+                </a>
+                
+                <a href="images/Kindoll_CV.pdf" download="Kindoll_CV.pdf" class="secondary-btn">
+                    Download CV <i class="fas fa-download"></i>
+                </a>
             </div>
 
             <div class="social-links">
                 <a href="https://github.com/higantk2" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://vercel.com/kindoll-hyacinth-peraans-projects" target="_blank" class="social-icon"><i class="fas fa-caret-up"></i></a>
+                <a href="https://vercel.com/kindoll-hyacinth-peraans-projects" target="_blank" class="social-icon"><i class="fas fa-code"></i></a>
                 <a href="https://www.facebook.com/damiankyzen" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.tiktok.com/@_kindoll1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
         <div class="profile-image-container">
@@ -58,109 +77,131 @@
     </section>
 
     <section id="projects" class="container">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
         <div class="project-grid">
             
-            <a href="https://eductour.vercel.app/" target="_blank" class="project-card">
+            <div class="project-card">
                 <img src="images/image7.jpg" alt="Educational Tour" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
                         <h3 class="project-title">Educational Tour</h3>
-                        <span class="project-year">2025</span>
+                        <div class="project-links">
+                            <a href="https://eductour.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <p class="project-description">Journal on Educational Tour</p>
+                    <p class="project-description">An immersive travel journal website featuring photo galleries and daily logs.</p>
                     <div class="tags project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JS</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://valentines-blush-delta.vercel.app/" target="_blank" class="project-card">
+            <div class="project-card">
                 <img src="images/image1.jpg" alt="Valentine App" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
-                        <h3 class="project-title">Valentine Surprise Idea</h3>
-                        <span class="project-year">2024</span>
+                        <h3 class="project-title">Valentine Surprise</h3>
+                        <div class="project-links">
+                            <a href="https://valentines-blush-delta.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <p class="project-description">A special dashboard project deployed on Vercel.</p>
+                    <p class="project-description">A special animated dashboard project deployed on Vercel.</p>
                     <div class="tags project-tags">
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">SCSS</span>
-                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span> <span class="tag">JS</span> <span class="tag">SCSS</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://valoraanttt.vercel.app/" target="_blank" class="project-card">
-                <img src="images/image2.jpg" alt="Valorant Project" class="project-image">
+            <div class="project-card">
+                <img src="images/image2.jpg" alt="Valorant Tracker" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
                         <h3 class="project-title">Valorant Agent Tracker</h3>
-                        <span class="project-year">2024</span>
+                        <div class="project-links">
+                            <a href="https://valoraanttt.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <p class="project-description">A agent data tracking application for Valorant players.</p>
+                    <p class="project-description">A data tracking application for Valorant players using modern API integration.</p>
                     <div class="tags project-tags">
-                        <span class="tag">Django</span>
-                        <span class="tag">React</span>
-                        <span class="tag">API</span>
+                        <span class="tag">React</span> <span class="tag">API</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://exercise2-chi.vercel.app/" target="_blank" class="project-card">
-                <img src="images/image4.jpg" alt="Exercise 2" class="project-image">
+            <div class="project-card">
+                <img src="images/image4.jpg" alt="Web Exercise 2" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
                         <h3 class="project-title">Web Exercise 2</h3>
-                        <span class="project-year">2024</span>
+                        <div class="project-links">
+                            <a href="https://exercise2-chi.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <p class="project-description">Class exercise focusing on layout and responsiveness.</p>
                     <div class="tags project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span> <span class="tag">CSS</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://exercise-7-taupe.vercel.app/" target="_blank" class="project-card">
+            <div class="project-card">
                 <img src="images/image5.jpg" alt="Exercise 7" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
                         <h3 class="project-title">Exercise 7</h3>
-                        <span class="project-year">2023</span>
+                        <div class="project-links">
+                            <a href="https://exercise-7-taupe.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                     <p class="project-description">Frontend development practice and component structure.</p>
                     <div class="tags project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span> <span class="tag">JS</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://advfinals.vercel.app/" target="_blank" class="project-card">
-                <img src="images/image3.jpg" alt="Advanced Finals" class="project-image">
+            <div class="project-card">
+                <img src="images/image3.jpg" alt="Book Discovery" class="project-image">
                 <div class="project-content">
                     <div class="project-header">
                         <h3 class="project-title">Adv102 Final Project</h3>
-                        <span class="project-year">2023</span>
+                        <div class="project-links">
+                            <a href="https://advfinals.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <p class="project-description">Final project submission showcasing advanced web techniques.</p>
+                    <p class="project-description">Final project submission showcasing advanced web techniques and databases.</p>
                     <div class="tags project-tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Database</span>
+                        <span class="tag">Next.js</span> <span class="tag">DB</span>
                     </div>
                 </div>
-            </a>
+            </div>
 
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-wrapper">
+            <p>I'm currently looking for internships and new opportunities. Send me a message below!</p>
+            
+            <form action="https://formspree.io/f/xqarljrb" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2024 KINDOLL HYACINTH. All rights reserved.</p>
+            <p>© 2025 KINDOLL HYACINTH. All rights reserved.</p>
         </div>
     </footer>
 

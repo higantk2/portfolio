@@ -6,37 +6,52 @@
     <title>Certificates - KINDOLL HYACINTH</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="cert-page-body">
+
+    <div class="animation-wrapper">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+    </div>
 
     <div class="navbar">
         <div class="container">
             <header>
                 <a href="index.html" class="logo">KINDOLL1</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
             </header>
         </div>
     </div>
 
     <section class="container cert-container">
-        <h1 class="hero-content">My Certificates</h1>
-        <p class="hero-content">Here are the certifications I have achieved.</p>
+        <div class="cert-header">
+            <h1>My Certificates</h1>
+            <p>Click on any certificate to view it in full size.</p>
+        </div>
         
-        <img src="images/image6.jpg" alt="Certificate" class="cert-image">
-        <img src="images/cert1.png" alt="Certificate" class="cert-image">
-        <img src="images/cert2.png" alt="Certificate" class="cert-image">
-        <img src="images/cert3.png" alt="Certificate" class="cert-image">
-        <img src="images/cert4.png" alt="Certificate" class="cert-image">
-        <img src="images/cert5.png" alt="Certificate" class="cert-image">
-        
-        <br>
-        <a href="index.html" class="back-btn">Go Back Home</a>
+        <div class="cert-grid">
+            <img src="images/cert3.png" alt="English for Developers" class="cert-image">
+            <img src="images/cert1.png" alt="JavaScript Algorithms" class="cert-image">
+            <img src="images/cert2.png" alt="Responsive Web Design" class="cert-image">
+            <img src="images/image6.jpg" alt="WATT" class="cert-image">
+            <img src="images/cert4.png" alt="OS Basics" class="cert-image">
+            <img src="images/cert5.png" alt="Hardware Basics" class="cert-image">
+        </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 KINDOLL HYACINTH. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="cert-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img-full">
+        <div id="caption"></div>
+    </div>
+
+    <div class="fixed-bottom-nav">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Go Back Home</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
